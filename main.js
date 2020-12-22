@@ -3,7 +3,6 @@ const productAmount = document.querySelector('#amount');
 const productType = document.querySelector('#type');
 const productContainers = document.querySelectorAll('.added-products div');
 const submitBtn = document.querySelector('.submitBtn')
-let index = 0;
 
 
 const products = [];
@@ -34,8 +33,6 @@ const addProduct = () => {
             })
         }
     })
-
-index++;
 }
 
 submitBtn.addEventListener('click', addProduct);

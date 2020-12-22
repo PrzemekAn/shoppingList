@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zakupów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="shoppingInputData">
+            <input id='name' type="text" placeholder="Wpisz nazwę produktu">
+            <input id='amount' type="number" placeholder='Wpisz ilość'>
+            <select name="productType" id="type">
+                <option value="" disabled selected>Kategoria</option>
+                <option id="bread" value="bread">Pieczywo</option>
+                <option id="dairy" value="dairy">Nabiał</option>
+                <option id="meat" value="meat">Mięso</option>
+                <option id="drinks" value="drinks">Napoje</option>
+                <option id="hygiene" value="hygiene">Higiena</option>
+                <option id="chemistry" value="chemistry">Chemia</option>
+            </select>
+            <button class='submitBtn'>Dodaj</button>
+        </div>
+        <div class="added-products">
+            <div class='bread'>
+                <h2 class="header">Pieczywo</h2>
+            </div>
+            <div class='dairy'>
+                <h2 class="header">Nabiał</h2>
+            </div>
+            <div class='meat'>
+                <h2 class="header">Mięso</h2>
+            </div>
+            <div class='drinks'>
+                <h2 class="header">Napoje</h2>
+            </div>
+            <div class='hygiene'>
+                <h2 class="header">Higiena</h2>
+            </div>
+            <div class='chemistry'>
+                <h2 class="header">Chemia</h2>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
